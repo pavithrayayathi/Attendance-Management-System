@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="user.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="logo">
+                <img src="https://bostwickdesign.com/wp-content/uploads/2022/06/Asset-16-19726_757x675.png" alt="logo">
+           </div>
+            <h1>User Management</h1>
+            <div id="input-container">
+            <input type="text" id="name-input" placeholder="Enter Name">
+            <input type="email" id="email-input" placeholder="Enter Email">
+            <button id="add-btn" onclick=" addUser()">Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+        <div id="update-container">
+            <input type="text" id="update-name-input" >
+            <input type="text" id="update-email-input">
+            <button id="update-btn"onclick=" updateUser()">Update</button>
+            <button id="cancel-btn"onclick="deleteUser(userId)">Cancel</button>
+        </div>
+    </div>
+        <script src="user.js"></script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+#container
+{
+    max-width: 500rem;
+    padding-top:1rem;
+    margin: 0 auto;
+    text-align: center;
+    background: #BAD7E9;
+}
+h1
+{   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 1rem;
+    color:#2B3467;
+    font-size: 32px;
+}
+#input-container
+{
+    margin-bottom: 20px;
+}
+#name-input,#email-input,#department-input,#address-input,#salary-input,#contact-input,
+#update-name-input,#update-email-input,#update-department-input,#update-address-input,#update-salary-input,#update-contact-input
+{
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid#ccc;
+}
+#name-input:focus,#email-input:focus,#department-input:focus,#address-input:focus,#salary-input:focus,#contact-input:focus,
+#update-name-input:focus,#update-email-input:focus,#update-department-input:focus,#update-address-input:focus,#update-salary-input:focus,#update-contact-input:focus
+{
+    border-color: #66afe9;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 80px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+button
+{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor:pointer;
+    background-color: #2B3467;
+    color:white;
+    border:none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+button:hover
+{
+    background-color: rgb(70, 139, 167);
+}
+table
+{
+    border-collapse: collapse;
+    width:100%;
+    margin-bottom:20px;
+    font-family:"poppins", sans-serif;
+    font-size: 15px;
+ }
+th,td
+{
+    padding: 10px;
+    text-align:left;
+    border-bottom: 1px solid#ddd;
+}
+th
+{
+    background-color: #2B3467;
+    color:white;
+}
+#update-container
+{
+    display:none;
+    margin-top:20px;
+}
+#update-btn
+{
+    background-color: #2196F3;
+}
+#cancel-btn
+{
+    background-color: #f44336;
+}
+.edit-btn
+{
+    background-color: #ffc107;
+}
+.delete-btn
+{
+    background-color: #dc3545;
+    margin-left: 10px;
+}

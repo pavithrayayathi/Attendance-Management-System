@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="employee.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Employee Management</h1>
+            <div id="input-container">
+            <input type="text" id="name-input" placeholder="Enter Name">
+            <input type="email" id="email-input" placeholder="Enter Email">
+            <input type="text" id="department-input" placeholder="Enter Department">
+            <input type="text" id="address-input" placeholder="Enter Address">
+            <input type="number" id="salary-input" placeholder="Enter Salary">
+            <input type="number" id="contact-input" placeholder="Enter Contact Number">
+            <button id="add-btn" onclick=" addUser()">Add</button>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                    <th>Contact Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr></tr>
+                <tr class="active"></tr>
+            </tbody>
+        </table>
+        <div id="update-container">
+            <input type="text" id="update-name-input" >
+            <input type="text" id="update-email-input">
+            <input type="text" id="update-department-input">
+            <input type="text" id="update-address-input">
+            <input type="number" id="update-salary-input">
+            <input type="number" id="update-contact-input">
+            <button id="update-btn"onclick="updateUser()">Update</button>
+            <button id="cancel-btn"onclick="deleteUser(userId)">Cancel</button>
+        </div>
+    </div>
+        <script src="employee.js"></script>
+    </body>
+</html>
